@@ -62,6 +62,7 @@ In addition to manual installation, you can also install it directly through Sin
 
 **1.First**
        Instal [Sine](https://github.com/CosmoCreeper/Sine)
+       
        If the hyperlink is broken, please copy and open link. `https://github.com/CosmoCreeper/Sine`
             
 **2.Second**
