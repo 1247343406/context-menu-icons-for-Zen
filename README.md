@@ -56,11 +56,14 @@ You need to restore the `sidebar.css` file in Nebula to version 2.8. Otherwise, 
 5. 🔄 **Restart the Browser**
    Reopen Zen to apply the UI changes.
    
---- In addition to manual installation, you can also install it directly through Sine. ---
+--- 
+In addition to manual installation, you can also install it directly through Sine.
+---
 
     **1.First**
        Instal [Sine](https://github.com/CosmoCreeper/Sine)
-       
+       If the hyperlink is broken, please copy and open link. `https://github.com/CosmoCreeper/Sine`
+            
    **2.Second**
    search`Context menu icons`then click on "Install"
    
