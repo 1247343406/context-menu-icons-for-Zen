@@ -7,28 +7,14 @@
 
 
 
-/* 1. 校正身份容器的菜单文本 */
-/* 1. Menu text for correcting the identity container */
-menupopup#new-tab-button-popup,
-menupopup#zenWorkspaceMoreActions menupopup {
-/* 普通菜单项 & 子菜单容器，排除图标项、已勾选复选/单选、已分组和高亮项 */
-> :is(menuitem, menu):not(
-    .menuitem-iconic,
-    .menu-iconic,
-
-    [type="checkbox"][checked="true"],
-    [type="radio"][checked="true"],
-
-    .in-menulist,
-    .in-menulist menuitem,
-    .in-menulist menu,
-    .unified-nav-current
-  ),
-/* 分组标题 */
-> menucaption {
-  padding-inline-start: 34px !important;  /* Modify the values here so that the menu text and icons of the identity tab remain aligned. right click "new tab" to check whether the text is correctly aligned */
-}                                         /* 🌟 If you are using Firefox, changing it to 36px might be more appropriate. */
+:root {
+  
+  --container-padding: -moz-pref("cmi-Custom-Padding-Container", "34px"); 
 }
+
+
+  /* Modify the values here so that the menu text and icons of the identity tab remain aligned. right click "new tab" to check whether the text is correctly aligned */
+
 
 
 /* ---------------------------
@@ -49,7 +35,7 @@ menupopup#zenWorkspaceMoreActions menupopup {
     --checkmark-width: 16px;
     --checkmark-height: 16px;
 
-    --checkmark-margin-start: 11px;         /* 自定义"√"图标的默认插入的起始位置. 右键 前进/后退 按钮看看"√"图标和文本有没有对齐。*/
+    --checkmark-margin-start: 11px;        /* 自定义"√"图标的默认插入的起始位置. 右键 前进/后退 按钮看看"√"图标和文本有没有对齐。*/
                                             /* The default insertion position for customizing the "√" icon. Right-click the "Forward" or "Back" button and check if the "√" icon and the text are aligned. */
                                             /* 🌟 If you are using Firefox, changing it to 13px might be more appropriate. */
 
