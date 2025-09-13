@@ -6,14 +6,15 @@
 /* 如果CMI已经显示正常，就不要改这些东西了 */
 
 
-
+/* 1. 校正身份容器的菜单文本 */
+/* 1. Menu text for correcting the container */
 :root {
   
-  --container-padding: -moz-pref("cmi-Custom-Padding-Container", "34px"); 
+  --container-padding: 34px; /* Modify the values here so that the menu text and icons of the identity tab remain aligned. right click "new tab" to check whether the text is correctly aligned */
+                            /* 🌟 If you are using Firefox, changing it to 36px might be more appropriate. */
 }
 
 
-  /* Modify the values here so that the menu text and icons of the identity tab remain aligned. right click "new tab" to check whether the text is correctly aligned */
 
 
 
