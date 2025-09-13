@@ -2145,6 +2145,31 @@ menuitem > .menu-iconic-text,
       ) !important;
   }
 
+
+/* 校正身份容器的菜单文本 */
+/* Menu text for correcting the container */
+menupopup#new-tab-button-popup,
+menupopup#zenWorkspaceMoreActions menupopup {
+/* 普通菜单项 & 子菜单容器，排除图标项、已勾选复选/单选、已分组和高亮项 */
+> :is(menuitem, menu):not(
+    .menuitem-iconic,
+    .menu-iconic,
+
+    [type="checkbox"][checked="true"],
+    [type="radio"][checked="true"],
+
+    .in-menulist,
+    .in-menulist menuitem,
+    .in-menulist menu,
+    .unified-nav-current
+  ),
+/* 分组标题 */
+> menucaption {
+  padding-inline-start: var(--container-padding) !important;
+}
+}  
+  
+
   /* 设置自定义 checkmark 图标（使用变量：可在两种模式间切换实现方式） */
   menupopup > menuitem[type="checkbox"][checked="true"]::before,
   menupopup > menuitem[type="radio"][checked="true"]::before {
