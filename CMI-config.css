@@ -26,8 +26,8 @@ menupopup#zenWorkspaceMoreActions menupopup {
   ),
 /* 分组标题 */
 > menucaption {
-  padding-inline-start: 34px !important;  /* Modify the values here so that the menu text and icons of the identity tab remain aligned. */
-}
+  padding-inline-start: 34px !important;  /* Modify the values here so that the menu text and icons of the identity tab remain aligned. right click "new tab" to check whether the text is correctly aligned */
+}                                         /* 🌟 If you are using Firefox, changing it to 36px might be more appropriate. */
 }
 
 
@@ -45,18 +45,23 @@ menupopup#zenWorkspaceMoreActions menupopup {
     /* 用于菜单内边距计算的差值（16px / 8px） */
     --menuitem-padding-extra: 16px;
 
-    /* checkmark */
+    /* Customized checkmark icon */
     --checkmark-width: 16px;
     --checkmark-height: 16px;
 
-    --checkmark-margin-start: 11px;
+    --checkmark-margin-start: 11px;         /* 自定义"√"图标的默认插入的起始位置. 右键 前进/后退 按钮看看"√"图标和文本有没有对齐。*/
+                                            /* The default insertion position for customizing the "√" icon. Right-click the "Forward" or "Back" button and check if the "√" icon and the text are aligned. */
+                                            /* 🌟 If you are using Firefox, changing it to 13px might be more appropriate. */
+
     --checkmark-margin-start_cover: 11px;
 
-    --checkmark-margin-end: 7px; 
+    --checkmark-margin-end: 7px;            /* 自定义"√"图标的默认插入的结束位置（包含占位符）.一般不用改 */
+                                            /* The default insertion end position (including placeholders) for customizing the "√" icon. Most of the time, no changes are necessary. */
 
     --checkmark-margin-end_cover: 11px;     /* "√"图标与菜单文本间的距离。设置为0px可以让菜单项目的文本紧跟"√"图标。调整此数值可以让其他Firefox分支浏览器中含有checkmark图标的上下文菜单获得正确的文本对齐。*/
                                             /*The distance between the "√" icon and the menu text. Setting it to 0px will make the menu item text align directly next to the "√" icon. 
                                             Adjusting this value will ensure that the context menus containing the checkmark icon in other Firefox branches have the correct text alignment. */
+                                            /* 🌟 If you are using Firefox, changing it to 8px might be more appropriate. */
 
     --checkmark-bg-image: url("checkmark.svg");
     --checkmark-mask: none;
@@ -67,7 +72,9 @@ menupopup#zenWorkspaceMoreActions menupopup {
     /* 对含选中项时的 group / 子菜单 padding 差别 */
     --group-padding: 10px;
     --checked-padding: 6px;
-    --submenu-padding: 34px;
+
+    --submenu-padding: 34px;                /* 调整子菜单项目对齐的数值 */
+                                            /*Adjust the numerical values for aligning the sub-menu items */
 
     --submenu-padding_cover: 38px;
   }
